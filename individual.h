@@ -21,6 +21,12 @@ public:
 	individual::individual();
 
 	/*
+	 * Parameterized <individual> constructor
+	 */
+	individual::individual(std::string new_first_name, std::string new_surname, unsigned int new_age,
+			unsigned int new_country_code, unsigned int new_area_code, unsigned int new_prefix, unsigned int new_postfix);
+
+	/*
 	 * Default <individual> de-constructor
 	 */
 	individual::~individual();
