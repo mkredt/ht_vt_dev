@@ -23,7 +23,7 @@ public:
 	/*
 	 * Parameterized <individual> constructor
 	 */
-	individual(std::string new_first_name, std::string new_surname, std::string new_household, unsigned int new_age,
+	individual(std::string new_first_name, std::string new_surname, std::string new_gender, std::string new_household, unsigned int new_age,
 			unsigned int new_country_code, unsigned int new_area_code, unsigned int new_prefix, unsigned int new_postfix);
 
 	/*
@@ -35,7 +35,13 @@ public:
 	 * Function will set name of the <individual>. It will accept
 	 * @param given_name, a std::string which will replace the given_name of the <individual>
 	 */
-	void setName(std::string given_name, std::string surname);
+	void setName(std::string new_given_name, std::string new_surname);
+
+	/*
+	 * Function will set gender of the <individual>
+	 * @param new_gender, a std::string which will replace the gender marked
+	 */
+	void setGender(std::string new_gender);
 
 	/*
 	 * Function will set age of the <individual>
@@ -68,7 +74,7 @@ private:
 	/*
 	 * LOCAL VARIABLES
 	 */
-	std::string full_name, given_name, surname;
+	std::string full_name, given_name, surname, gender, phone_number;
 	std::string unit_name;
 	unsigned int age, phone_country_code, phone_area_code, phone_prefix, phone_postfix;
 };
